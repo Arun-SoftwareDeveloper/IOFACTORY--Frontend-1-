@@ -1,0 +1,135 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.left-side {
+  float: left;
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px; /* Add some space between left and right containers */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-side {
+  float: right;
+  width: 50%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #0a0a0a;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.title-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.text-primary {
+  color: #fff;
+}
+
+.cake-img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  border-radius: 30px;
+  background-color: #0a0a0a;
+  color: #fff;
+  animation: jump 0.5s infinite alternate;
+  /* Apply the jump animation */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.col-md-5 {
+  border: 1px solid rgb(238, 233, 233);
+  box-shadow: 0 0 10px white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.col-md-5 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.col-md-5 h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.col-md-5 p {
+  margin-bottom: 15px;
+}
+
+.col-md-5 span {
+  display: inline-block;
+  margin-right: 10px; /* Add some spacing between Serve and Rating */
+  margin-bottom: 10px;
+  color: #737070;
+}
+
+.cake-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cook-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+  .left-side,
+  .right-side {
+    float: none;
+    width: 100%;
+  }
+
+  .col-md-5 {
+    width: 100%;
+  }
+}
